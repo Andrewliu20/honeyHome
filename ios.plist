@@ -11,7 +11,7 @@
                         <key>kind</key>
                         <string>software-package</string>
                         <key>url</key>
-                        <string>ipa包路径，可以放在http服务器</string>
+                        <string>https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/iOS-0.3.4.ipa</string>
                     </dict>
                     <dict>
                         <key>kind</key>
@@ -33,15 +33,15 @@
                 <key>metadata</key>
                 <dict>
                     <key>bundle-identifier</key>
-                    <string>bundleID</string>
+                    <string>app.shangliankongjian.com</string>
                     <key>bundle-version</key>
-                    <string>版本号</string>
+                    <string>0.3.4</string>
                     <key>kind</key>
                     <string>software</string>
                     <key>subtitle</key>
                     <string>App</string>
                     <key>title</key>
-                    <string>名称</string>
+                    <string>shangliankongjian</string>
                 </dict>
             </dict>
         </array>
