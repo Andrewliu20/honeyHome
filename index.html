@@ -146,13 +146,14 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
         var u = navigator.userAgent;
         var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
         var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
         function display(id){
-            var traget=document.getElementById('downloadAppDiv');
-            if(traget.style.display=="" && isAndroid && isAndroid){
-                traget.style.display="none";
-            }else{
-                traget.style.display="";
-            }
+                    var traget=document.getElementById('downloadAppDiv');
+                    if( isiOS || isAndroid){
+                        traget.style.display="";
+                    }else{
+                        traget.style.display="none";
+                    }
         }
         if (isiOS) {
             //ios
@@ -167,14 +168,14 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
         }else {
             //其他
 //            alert("其他")
-            function display(id){
-                var traget=document.getElementById('downloadAppDiv');
-                if(traget.style.display=="none"){
-                    traget.style.display="";
-                }else{
-                    traget.style.display="none";
-                }
-            }
+//            function display(id){
+//                var traget=document.getElementById('downloadAppDiv');
+//                if(traget.style.display=="none"){
+//                    traget.style.display="";
+//                }else{
+//                    traget.style.display="none";
+//                }
+//            }
 
 
         }
