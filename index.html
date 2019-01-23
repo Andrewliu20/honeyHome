@@ -146,20 +146,27 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
         var u = navigator.userAgent;
         var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
         var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-
+        function display(id){
+            var traget=document.getElementById('downloadAppDiv');
+            if(traget.style.display=="" && isAndroid && isAndroid){
+                traget.style.display="none";
+            }else{
+                traget.style.display="";
+            }
+        }
         if (isiOS) {
             //ios
-            alert("iOS")
+//            alert("iOS")
             $('#downloadAppURLID').attr('href','itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/ios.plist')
         }
         else if(isAndroid)
         {
-            alert("Android")
+//            alert("Android")
             //这是Android系统 $('#home_keleyi_com').attr('href','http://keleyi.com')
             $('#downloadAppURLID').attr('href','itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk')
         }else {
             //其他
-            alert("其他")
+//            alert("其他")
             function display(id){
                 var traget=document.getElementById('downloadAppDiv');
                 if(traget.style.display=="none"){
