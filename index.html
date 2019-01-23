@@ -152,7 +152,7 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
             //ios
 //            alert("iOS");
 //            document.getElementById("downloadAppDiv").style.display="inline";
-            document.getElementById("downloadAppDiv").style.display="";//显
+//            document.getElementById("downloadAppDiv").style.display="";//显
             $('#downloadAppURLID').attr('href','itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/ios.plist');
 
         }
@@ -161,13 +161,15 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
             alert("Android");
             //这是Android系统 $('#home_keleyi_com').attr('href','http://keleyi.com')
 
-            document.getElementById("downloadAppDiv").style.display="";//显
+
+//            document.getElementById("downloadAppDiv").style.display="";//显
 //            $('#downloadAppURLID').attr('href','https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk');
             document.getElementById("downloadAppURLID").href = "https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk";
+            alert(document.getElementById('downloadAppURLID').href);
         }else {
             //其他
 //            alert('qita');
-            document.getElementById("downloadAppDiv").style.display="block";//隐藏
+//            document.getElementById("downloadAppDiv").style.display="block";//隐藏
 
 
         }
