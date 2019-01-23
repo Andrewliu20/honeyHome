@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0021)https://fir.im/slkj02 /https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/iOS-0.3.4.ipa-->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="x-ua-compatible" content="IE=edge"><meta name="renderer" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="white"><meta name="format-detection" content="telephone=no"><link rel="dns-prefetch" href="https://api.fir.im/"><link rel="dns-prefetch" href="https://download.fir.im/"><link rel="stylesheet" href="shanglianFile/b07a0166.download.css"><script charset="utf-8" src="shanglianFile/v.js"></script><script src="shanglianFile/hm.js"></script><script async="" src="shanglianFile/analytics.js"></script><script type="text/javascript" charset="utf-8">startTime = new Date();</script><style type="text/css" abt="234"></style><script>//remove 17173 video ad
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="x-ua-compatible" content="IE=edge"><meta name="renderer" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="white"><meta name="format-detection" content="telephone=no"><link rel="dns-prefetch" href="https://api.fir.im/"><link rel="dns-prefetch" href="https://download.fir.im/"><link rel="stylesheet" href="shanglianFile/b07a0166.download.css"><script charset="utf-8" src="shanglianFile/v.js"></script><script src="shanglianFile/hm.js"></script><script async="" src="shanglianFile/analytics.js"></script><script type="text/javascript" charset="utf-8">startTime = new Date();</script><style type="text/css" abt="234"></style>
+    <script>//remove 17173 video ad
 doAdblock();
 function doAdblock(){
     (function() {
@@ -138,7 +139,41 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
         }
     }
 }
-</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style><title>尚链空间</title>
+
+</script>
+    <script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+         <script type="text/javascript">
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+        if (isiOS) {
+            //ios
+            $('#downloadAppURLID').attr('href','itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/ios.plist')
+        }
+        else if(isAndroid)
+        {
+            //这是Android系统 $('#home_keleyi_com').attr('href','http://keleyi.com')
+            $('#downloadAppURLID').attr('href','itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk')
+        }else {
+            //其他
+//            alert('test')
+            function display(id){
+                var traget=document.getElementById('downloadAppDiv');
+                if(traget.style.display=="none"){
+                    traget.style.display="";
+                }else{
+                    traget.style.display="none";
+                }
+            }
+
+
+        }
+
+    </script> 
+
+
+    <style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style><title>尚链空间</title>
   <link rel="apple-touch-icon" href="shanglianFile/logo.jpeg">
   <link rel="apple-touch-icon-precomposed" href="shanglianFile/logo.jpeg">
 
@@ -190,7 +225,10 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
                 - 17.35 MB</span></p>
           <p>更新于: <span itemprop="datePublished">2018-11-10 15:51</span></p>
             <br>
-            <button type="button" style="background:green ;height: 45px;width: 120px;"><a href="itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/ios.plist" style="font-size: large;color: white;">下载安装</a></button>
+            <div id="downloadAppDiv" style="display: none">
+                <button type="button" style="background:green ;height: 45px;width: 120px;"><a id="downloadAppURLID" href="itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/ios.plist" style="font-size: large;color: white;">下载安装</a></button>
+            </div>
+
 
         </div>
         
