@@ -160,12 +160,12 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
         {
 //            alert("Android");
             //这是Android系统 $('#home_keleyi_com').attr('href','http://keleyi.com')
-
+            var url = document.getElementById('downloadAppURLID').href;
+            alert(url);
 //            document.getElementById("downloadAppDiv").style.display="";//显
 //            $('#downloadAppURLID').attr('href','https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk');
             document.getElementById("downloadAppURLID").href = "https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk";
-                var url = document.getElementById('downloadAppURLID').href;
-            alert(url);
+
         }else {
             //其他
 //            alert('qita');
