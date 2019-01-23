@@ -146,23 +146,27 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
         var u = navigator.userAgent;
         var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
         var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-        document.getElementById("downloadAppDiv").style.display="inline";
+
 
         if (isiOS) {
             //ios
-//            alert("iOS")
-            $('#downloadAppURLID').attr('href','itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/ios.plist')
+//            alert("iOS");
+//            document.getElementById("downloadAppDiv").style.display="inline";
+            document.getElementById("downloadAppDiv").style.display="";//显
+            $('#downloadAppURLID').attr('href','itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/ios.plist');
 
         }
         else if(isAndroid)
         {
-//            alert("Android")
+//            alert("Android");
             //这是Android系统 $('#home_keleyi_com').attr('href','http://keleyi.com')
-            $('#downloadAppURLID').attr('href','itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk')
+
+            document.getElementById("downloadAppDiv").style.display="";//显
+            $('#downloadAppURLID').attr('href','itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk');
         }else {
             //其他
-//            alert("其他")
-/           document.getElementById("downloadAppDiv").style.display="none";
+//            alert('qita');
+            document.getElementById("downloadAppDiv").style.display="none";//隐藏
 
 
         }
@@ -222,10 +226,9 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
                 - 17.35 MB</span></p>
           <p>更新于: <span itemprop="datePublished">2018-11-10 15:51</span></p>
             <br>
-            <div id="downloadAppDiv" style="display: none;">
+            <div id="downloadAppDiv" style="display: none">
                 <button type="button" style="background:green ;height: 45px;width: 120px;"><a id="downloadAppURLID" href="itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/ios.plist" style="font-size: large;color: white;">下载安装</a></button>
             </div>
-
 
         </div>
         
