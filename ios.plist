@@ -11,7 +11,7 @@
                         <key>kind</key>
                         <string>software-package</string>
                         <key>url</key>
-                        <string>https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/iOS-0.3.4.ipa</string>
+                        <string>https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/RightBTC/RightBTCiOS.ipa</string>
                     </dict>
                     <dict>
                         <key>kind</key>
@@ -33,15 +33,15 @@
                 <key>metadata</key>
                 <dict>
                     <key>bundle-identifier</key>
-                    <string>app.shangliankongjian.com</string>
+                    <string>com.viewfin.RightBTC</string>
                     <key>bundle-version</key>
-                    <string>0.3.4</string>
+                    <string>1.0.1</string>
                     <key>kind</key>
                     <string>software</string>
                     <key>subtitle</key>
                     <string>App</string>
                     <key>title</key>
-                    <string>尚链空间</string>
+                    <string>RightBTC</string>
                 </dict>
             </dict>
         </array>
