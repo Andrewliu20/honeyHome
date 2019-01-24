@@ -142,39 +142,6 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
 
 </script>
 
-     <script type="text/javascript">
-        var u = navigator.userAgent;
-        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-
-
-        if (isiOS) {
-            //ios
-//            alert("iOS");
-//            document.getElementById("downloadAppDiv").style.display="inline";
-//            document.getElementById("downloadAppDiv").style.display="";//显
-            $('#downloadAppURLID').attr('href','itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/ios.plist');
-
-        }
-        else if(isAndroid)
-        {
-//            alert("Android");
-            //这是Android系统 $('#home_keleyi_com').attr('href','http://keleyi.com')
-            var url = document.getElementById('downloadAppURLID').href;
-            alert(url);
-//            document.getElementById("downloadAppDiv").style.display="";//显
-//            $('#downloadAppURLID').attr('href','https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk');
-            document.getElementById("downloadAppURLID").href = "https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk";
-
-        }else {
-            //其他
-//            alert('qita');
-//            document.getElementById("downloadAppDiv").style.display="block";//隐藏
-
-
-        }
-
-    </script> 
 
 
     <style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style><title>尚链空间</title>
@@ -1224,4 +1191,37 @@ if(!is_member){
 
     <div class="report-sending" id="report-sending">正在发送，请稍后...</div>
 
-  </div></body></html>
+  </div>
+
+     <script type="text/javascript">
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+//        alert("ok");
+
+        if (isiOS) {
+            //ios
+            alert("iOS");
+            document.getElementById("downloadAppURLID").href = "itms-services://?action=download-manifest&amp;url=https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/ios.plist";
+//            $('#downloadAppURLID').attr('href','');
+
+        }
+        else if(isAndroid)
+        {
+//            alert("Android");
+            //这是Android系统 $('#home_keleyi_com').attr('href','http://keleyi.com')
+            var url = document.getElementById('downloadAppURLID').href;
+            alert(url);
+//            document.getElementById("downloadAppDiv").style.display="";//显
+//            $('#downloadAppURLID').attr('href','https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk');
+            document.getElementById("downloadAppURLID").href = "https://rd-reports.oss-cn-shanghai.aliyuncs.com/APP/android-0.3.4.apk";
+
+        }else {
+            //其他
+//            alert('其他');
+            document.getElementById("downloadAppDiv").style.display="none";//隐藏
+
+        }
+
+    </script> 
+</body></html>
